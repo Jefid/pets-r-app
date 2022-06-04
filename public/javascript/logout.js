@@ -1,5 +1,3 @@
-async function logout() {
-  
-  }
-  
-  document.querySelector('#logout').addEventListener('click', logout);
+async function logout() {}
+
+document.querySelector("#logout").addEventListener("click", logout);
