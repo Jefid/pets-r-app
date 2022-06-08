@@ -1,3 +1,11 @@
+
+:root {
+  --primary-color: #37432D;
+  --secondary-color: #474A2B;
+  --tertiary-color: #BD9D46;
+  --background-color: #b5b98dc4;
+}
+
 * {
     box-sizing: border-box;
   }
@@ -7,22 +15,26 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    color: #333;
+    color: var(--secondary-color);
+    background-color: var(--background-color);
   }
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: var(--secondary-color);
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: var(--secondary-color);
+  }
+  label {
+
   }
   
   button {
-    background-color: #225ca3;
+    background-color: var(--secondary-color);
     border: 0;
     padding: 1%;
     color: white;
@@ -33,7 +45,7 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: var(--secondary-color);
   }
   
   .post-list {
@@ -49,7 +61,7 @@
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid var(--secondary-color);
   }
   
   textarea {
@@ -84,24 +96,12 @@
   
   header h1 {
     font-size: 1em;
+    padding: 10px;
   }
   
   main {
     flex: 1;
     padding: 2% 4%;
-  }
-  
-  .btn-no-style {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    text-decoration: none;
-    color: #225ca3;
-    font-size: 100%;
-    font-weight: bold;
-    transition: color .1s;
-    margin-left: 16px;
   }
   
   .btn-no-style:hover {
