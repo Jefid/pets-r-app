@@ -4,6 +4,7 @@
   --secondary-color: #474A2B;
   --tertiary-color: #BD9D46;
   --background-color: #b5b98dc4;
+  --post-color: #30451f81;
 }
 
 * {
@@ -11,11 +12,10 @@
   }
   
   body, html {
-    height: 100%;
+    height: max-content;
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    color: var(--secondary-color);
     background-color: var(--background-color);
   }
   
@@ -26,13 +26,28 @@
     transition: color .1s;
   }
   
-  a:hover {
-    color: var(--secondary-color);
+  .dark-mode a {
+    text-decoration: none;
+    color: var(--background-color);
+    font-weight: bold;
+    transition: color .1s;
   }
-  label {
 
+  a:hover {
+    color: var(--tertiary-color);
   }
-  
+
+  label {
+    font-size: 20px;
+  }
+
+  main li {
+    background-color: var(--post-color);
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+
   button {
     background-color: var(--secondary-color);
     border: 0;
@@ -87,7 +102,7 @@
   }
   
   header {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,7 +140,7 @@
   .post .title span {
     font-style: italic;
     font-size: 90%;
-    color: #7d7d7d;
+    color: #5d5d5d;
   }
   
   .edit-link {
@@ -170,7 +185,7 @@
   }
   
   footer {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #37432D;
     display: flex;
     justify-content: center;
     padding: 1%;
