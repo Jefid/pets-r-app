@@ -19,7 +19,7 @@ const postdata = [
   {
     title: 'Love this song!',
     post_url: 'https://genius.com/Rem-the-sidewinder-sleeps-tonite-lyrics',
-    user_id: 4
+    user_id: 2
   },
   {
     title: 'Having a surprisingly decent season',
@@ -29,7 +29,7 @@ const postdata = [
   {
     title: 'Python for Beginners.',
     post_url: 'https://www.python.org/about/gettingstarted/',
-    user_id: 4
+    user_id: 2
   },
   {
     title: 'Have you been to the zoo yet?',
