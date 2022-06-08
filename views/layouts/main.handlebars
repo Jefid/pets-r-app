@@ -1,40 +1,61 @@
-<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hisscussions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just Tech News</title>
-  <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="col-md-2">
+          <a
+            href="/"
+            class="btn btn-primary btn-block"
+            type="button"
+          >Hisscussions</a>
+        </h1>
+        <nav>{{#if loggedIn}}
+            <a href="/dashboard" class="btn btn-primary">dashboard</a>
+            <button
+              id="logout"
+              class="btn btn-primary"
+              type="button"
+            >logout</button>
+            <button
+              class="btn btn-primary"
+              type="button"
+              onclick="toggleDemo()"
+            >Night Mode?</button>
+          {{else}}
+            <a href="/login" class="btn btn-primary">login</a>
+          {{/if}}
+        </nav>
+      </header>
+      <main>
+        {{{body}}}
+      </main>
+      <footer>
+        Thanks for visiting!
+      </footer>
+    </div>
 
-<body>
-  <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">Snek Lovers</a>
-      </h1>
-      <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
-    </header>
-    <main>
-      {{{ body }}}
-    </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
-  </div>
-  
-  {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
-</body>
+    {{#if loggedIn}}
+      <script src="/javascript/logout.js"></script>
+    {{/if}}
+    <!-- Halfmoon JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"
+    ></script>
+    <script src="path/to/halfmoon.js"></script>
+    <script type="text/javascript">
+      function toggleDemo() { halfmoon.toggleDarkMode(); }
+    </script>
+  </body>
 
 </html>
