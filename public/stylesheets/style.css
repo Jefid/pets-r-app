@@ -44,9 +44,14 @@
   main li {
     background-color: var(--post-color);
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
+    font-size: large;
+    text-align: center;
   }
 
+  main li a {
+    font-size:larger;
+  }
 
   button {
     background-color: var(--secondary-color);
