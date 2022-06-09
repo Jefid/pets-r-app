@@ -10,13 +10,20 @@
 * {
     box-sizing: border-box;
   }
-  
+
+  /* body{
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+  } */
+
   body, html {
-    height: max-content;
+     height: fit-content; 
     padding: 0;
     margin: 0;
     font-family: sans-serif;
     background-color: var(--background-color);
+    min-height: 100%;
   }
   
   a {
@@ -126,7 +133,7 @@
   
   .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: var(--primary-color);
   }
   
   .delete-post-btn {
@@ -151,15 +158,6 @@
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
-  }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
   }
   
   .comment-form {
@@ -192,7 +190,9 @@
   footer {
     border-top: 1px solid #37432D;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     padding: 1%;
     font-size: 110%;
+    background-color: transparent;
+    position: sticky;
   }
