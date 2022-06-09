@@ -11,12 +11,6 @@
     box-sizing: border-box;
   }
 
-  /* body{
-    height: fit-content;
-    padding: 0;
-    margin: 0;
-  } */
-
   body, html {
      height: fit-content; 
     padding: 0;
@@ -69,10 +63,6 @@
     transition: background-color .1s;
     cursor: pointer;
     border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: var(--secondary-color);
   }
   
   .post-list {
